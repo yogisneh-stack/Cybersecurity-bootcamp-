@@ -1,0 +1,13 @@
+WebGuard C++ dependencies
+
+1. C++17 compatible compiler (GCC, Clang, or MSVC)
+2. libcurl development library
+3. CMake 3.15 or later (optional, recommended)
+
+Build with CMake:
+  cmake -S . -B build
+  cmake --build build
+
+On Windows, install libcurl using vcpkg:
+  vcpkg install curl
+Then configure CMake with the vcpkg toolchain file.
